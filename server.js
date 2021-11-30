@@ -1,7 +1,15 @@
 const express = require('express')
+const connectDB = require('./config/db')
 
 const app = express()
 
+//connect Database
+connectDB()
+
+//middleware
+app.use(express.json({extended:false}))
+
+//test route
 app.get('/', (req, res) => res.json({ msg: 'Welcome to my contact manager api' }))
 
 //Routes

@@ -1,0 +1,5 @@
+// global variables for mongodb atlas
+
+{
+    "mongoURI": "mongodb+srv://andychoe123:andychoe123@aws-cluster.5nzft.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
