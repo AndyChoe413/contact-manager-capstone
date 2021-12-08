@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
@@ -19,6 +22,7 @@
     "gitignore": "^0.7.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.14",
+    "react-router-dom": "^5.2.0",
     "validator": "^13.7.0"
   },
   "devDependencies": {
