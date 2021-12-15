@@ -6,7 +6,7 @@ const config = require('config')
 
 
 // const validator = require('validator')
-const {check, validationResult} = require('express-validator')
+const {check, validationResult} = require('express-validator/check')
 
 //schema
 const User = require('../models/User');
